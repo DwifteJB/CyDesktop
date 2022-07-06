@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "cydiarepodownloader": "github:DwifteJB/CydiaRepoDownloader",
+    "esm-hook": "^0.1.2",
+    "node-fetch-commonjs": "^3.1.1"
+  },
+  "name": "cydesktop",
+  "type": "commonjs",
+  "description": "A desktop client for viewing and using iOS Cydia Repos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "electron": "^19.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DwifteJB/CyDesktop.git"
+  },
+  "author": "DwifteJB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DwifteJB/CyDesktop/issues"
+  },
+  "homepage": "https://github.com/DwifteJB/CyDesktop#readme"
+}
