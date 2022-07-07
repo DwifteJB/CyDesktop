@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "cydiarepodownloader": "github:DwifteJB/CydiaRepoDownloader",
+    "esm": "^3.2.25",
     "esm-hook": "^0.1.2",
+    "jquery": "^3.6.0",
     "node-fetch-commonjs": "^3.1.1"
   },
   "name": "cydesktop",
@@ -10,7 +12,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "electron": "^19.0.7"
+    "electron": "^19.0.8"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

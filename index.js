@@ -10,7 +10,6 @@ if (process.platform === "win32") dataPath = process.env.APPDATA;
 else if (process.platform === "darwin") dataPath = path.join(process.env.HOME, "Library", "Preferences");
 else dataPath = process.env.XDG_CONFIG_HOME ? process.env.XDG_CONFIG_HOME : path.join(process.env.HOME, ".config");
 dataPath = path.join(dataPath, "CyDesktop") + "/";
-console.log(dataPath)
 if (!fs.existsSync(dataPath)) fs.mkdirSync(dataPath);
 if (!fs.existsSync(dataPath+"/version")) fs.writeFileSync(dataPath+"/version",JSON.parse(fs.readFileSync("package.json")).version);
 /*
@@ -21,8 +20,8 @@ const createWindow = async () => {
       width: 1080,
       height: 720,
       webPreferences: {
-        preload: path.join(__dirname, 'preload.js'),
-        nodeIntegration: true
+        nodeIntegration: true,
+        contextIsolation: false
       },
       title: "CyDesktop",
     })
